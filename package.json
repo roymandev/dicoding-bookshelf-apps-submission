@@ -1,0 +1,7 @@
+{
+  "name": "dicoding-bookshelf-apps-submission",
+  "version": "1.0.0",
+  "devDependencies": {
+    "tailwindcss": "^3.1.4"
+  }
+}
