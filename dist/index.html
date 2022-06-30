@@ -30,5 +30,65 @@
       <p>Dicoding Front-End Pemula Submission</p>
     </header>
     <!-- End Header -->
+
+    <main class="flex max-w-5xl px-3 mx-auto">
+      <!-- New book form -->
+      <aside class="bg-white rounded shadow w-1/3">
+        <section>
+          <h2 class="py-2 px-3 text-lg font-medium border-b border-slate-300">
+            Add New Book
+          </h2>
+          <form class="p-3 flex flex-col gap-3" id="add-book-form">
+            <fieldset class="flex flex-col gap-.5">
+              <label class="font-medium" for="book-title">Title</label>
+              <input
+                class="border border-slate-300 w-full h-8 px-2 rounded outline-none focus:border-sky-500"
+                name="book-title"
+                id="book-title"
+                type="text"
+                required
+              />
+            </fieldset>
+            <fieldset class="flex flex-col gap-.5">
+              <label class="font-medium" for="book-author">Author</label>
+              <input
+                class="border border-slate-300 w-full h-8 px-2 rounded outline-none focus:border-sky-500"
+                name="book-author"
+                id="book-author"
+                type="text"
+                required
+              />
+            </fieldset>
+            <fieldset class="flex flex-col gap-.5">
+              <label class="font-medium" for="book-year">Year</label>
+              <input
+                class="border border-slate-300 h-8 px-2 rounded outline-none focus:border-sky-500 max-w-[120px]"
+                name="book-year"
+                id="book-year"
+                type="number"
+                required
+              />
+            </fieldset>
+            <fieldset class="flex gap-2 items-center">
+              <label for="book-isComplete">Finished reading?</label>
+              <input
+                class="w-4 h-4 accent-sky-600"
+                type="checkbox"
+                name="book-isComplete"
+                id="book-isComplete"
+              />
+            </fieldset>
+            <button
+              class="rounded px-3 py-1 text-center w-full bg-sky-100 text-sky-700 border border-sky-300 outline-none hover:border-sky-500 hover:bg-sky-200 focus:border-sky-500 focus:bg-sky-200"
+              type="submit"
+            >
+              Add Book
+            </button>
+          </form>
+        </section>
+      </aside>
+      <div class="w-2/3"></div>
+      <!-- End: New book form -->
+    </main>
   </body>
 </html>
