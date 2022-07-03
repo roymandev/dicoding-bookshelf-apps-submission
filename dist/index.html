@@ -92,23 +92,40 @@
           <h2 class="py-2 px-3 text-lg font-medium border-b border-slate-300">
             Not finished reading
           </h2>
-          <ul class="p-2 grid grid-cols-2 gap-2">
-            <li
-              class="border rounded py-2 px-3 text-left cursor-pointer hover:border-slate-500"
-            >
-              <h3><b>Harry Potter and the Philosopher's Stone</b> (1997)</h3>
-              <p>J.K Rowling</p>
-            </li>
-            <li
-              class="border rounded py-2 px-3 text-left cursor-pointer hover:border-slate-500"
-            >
-              <h3><b>Harry Potter and the Philosopher's Stone</b> (1997)</h3>
-              <p>J.K Rowling</p>
-            </li>
-          </ul>
+          <ul
+            class="p-2 grid grid-cols-2 gap-2"
+            id="not-finished-bookself"
+          ></ul>
         </section>
       </div>
       <!-- End: New book form -->
+
+      <!-- Components -->
+      <div class="hidden" id="components">
+        <li
+          data-component="book"
+          class="border rounded p-2 text-left cursor-pointer hover:border-slate-400 relative group transition-colors"
+        >
+          <h3><b data-title>Title</b> <span data-year>(Year)</span></h3>
+          <p data-author>J.K Rowling</p>
+          <div
+            class="flex group-hover:opacity-100 gap-1 text-sm mt-2 justify-end absolute bottom-0 right-0 opacity-0 bg-white p-1 rounded transition-opacity"
+          >
+            <button
+              data-toggle-complete
+              class="rounded px-2 py-1 bg-sky-100 text-sky-700 border border-sky-300 outline-none hover:border-sky-500 hover:bg-sky-200"
+            >
+              Finish read
+            </button>
+            <button
+              data-delete
+              class="rounded px-2 py-1 bg-red-100 text-red-700 border border-red-300 outline-none hover:border-red-500 hover:bg-red-200"
+            >
+              Delete
+            </button>
+          </div>
+        </li>
+      </div>
 
       <script src="./script/main.js"></script>
     </main>
