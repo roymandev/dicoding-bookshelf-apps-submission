@@ -129,6 +129,11 @@ class Bookshelf {
         this.#notFinishedContainer.append(bookNode);
       }
     });
+
+    if (!this.#notFinishedContainer.children.length)
+      this.#notFinishedContainer.innerHTML = "No Books";
+    if (!this.#finishedBookshelf.children.length)
+      this.#finishedBookshelf.innerHTML = "No Books";
   }
 }
 
