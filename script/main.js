@@ -39,8 +39,12 @@ class Book {
                 bookDelete.onclick = () => this.onRemove();
             // Set book toggle method
             const bookIsComplete = bookComponent.querySelector("[data-toggle-complete]");
-            if (bookIsComplete)
+            if (bookIsComplete) {
+                bookIsComplete.innerText = this.#book.isComplete
+                    ? "Set not finish"
+                    : "Set finish";
                 bookIsComplete.onclick = () => this.toggleComplete();
+            }
             return bookComponent;
         }
         return null;
@@ -63,6 +67,7 @@ class Bookshelf {
                 ...books.map((bookState) => {
                     const book = new Book(bookState);
                     book.onRemove = () => this.removeBookById(book.getData().id);
+                    book.onToggle = () => this.render();
                     return book;
                 }),
             ]);
