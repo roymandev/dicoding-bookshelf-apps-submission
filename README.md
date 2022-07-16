@@ -1,3 +1,3 @@
-# Dicoding Front-End Web Pemula Submission
+# Dicoding Bookshelf Apps Submission
 
-This repo is static website for my submission in dicoding from IDCamp scholarship programs.
+This repo is static website for my submission in Dicoding "Belajar Dasar Pemrograman JavaScript" class.
